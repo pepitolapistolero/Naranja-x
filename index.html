@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Naranja X - Libertad Financiera</title>
+    <!-- Material Symbols & Fonts -->
+    <link href="https://googleapis.com" rel="stylesheet"/>
+    <link href="https://googleapis.com" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+                "primary": "#a83200",
+                "primary-container": "#d34100",
+                "surface": "#f9f9f9",
+                "on-surface": "#1a1c1c",
+            },
+            fontFamily: {
+                "headline": ["Plus Jakarta Sans"],
+                "body": ["Manrope"],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+        .editorial-gradient { background: linear-gradient(135deg, #a83200 0%, #d34100 100%); }
+        .glass-nav { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(20px); }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+
+<!-- Nav -->
+<nav class="fixed top-0 w-full z-50 glass-nav border-b border-zinc-200">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-20">
+        <div class="flex items-center gap-10">
+            <a class="text-2xl font-black text-orange-600 italic font-headline" href="#">Naranja X</a>
+            <div class="hidden md:flex gap-6 font-semibold text-zinc-600">
+                <a href="#" class="hover:text-orange-600">Cuentas</a>
+                <a href="#" class="hover:text-orange-600">Tarjetas</a>
+                <a href="#" class="hover:text-orange-600">Préstamos</a>
+            </div>
+        </div>
+        <div class="flex gap-4">
+            <button class="text-orange-600 font-bold px-4">Ingresar</button>
+            <button class="editorial-gradient text-white px-6 py-2.5 rounded-full font-bold shadow-lg">Hacete cliente</button>
+        </div>
+    </div>
+</nav>
+
+<main class="pt-20">
+    <!-- Hero -->
+    <section class="relative bg-primary px-6 pt-20 pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 z-10">
+                <span class="bg-white/20 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Finanzas Modernas</span>
+                <h1 class="text-5xl md:text-7xl font-black text-white font-headline leading-tight">Tu libertad <br>financiera <br>empieza acá.</h1>
+                <p class="text-lg text-white/80 max-w-md">Gestioná tu plata, pagá servicios y pedí préstamos desde una sola app. Sin vueltas, 100% digital.</p>
+                <div class="flex flex-wrap gap-4">
+                    <button class="bg-white text-primary px-8 py-4 rounded-full font-bold hover:scale-105 transition">Abrir cuenta gratis</button>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="https://unsplash.com" class="rounded-3xl shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500" alt="App Preview">
+            </div>
+        </div>
+    </section>
+
+    <!-- Bento Grid Services -->
+    <section class="max-w-7xl mx-auto px-6 py-24">
+        <h2 class="text-3xl font-black font-headline mb-10">Soluciones para vos</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="md:col-span-2 bg-white p-10 rounded-3xl shadow-sm border border-zinc-100 flex flex-col justify-between">
+                <div>
+                    <span class="material-symbols-outlined text-orange-500 text-4xl mb-4">account_balance_wallet</span>
+                    <h3 class="text-2xl font-bold mb-2">Cuenta remunerada</h3>
+                    <p class="text-zinc-500">Tu plata crece todos los días solo por tenerla en la cuenta. Sin plazos fijos.</p>
+                </div>
+                <button class="mt-8 text-orange-600 font-bold flex items-center gap-2">Saber más <span class="material-symbols-outlined">arrow_forward</span></button>
+            </div>
+            <div class="bg-orange-100 p-10 rounded-3xl flex flex-col justify-between">
+                <div>
+                    <span class="material-symbols-outlined text-orange-600 text-4xl mb-4">credit_card</span>
+                    <h3 class="text-2xl font-bold mb-2">Tarjeta Visa</h3>
+                    <p class="text-zinc-600">Pedila gratis y usala en todo el mundo.</p>
+                </div>
+                <button class="mt-8 bg-orange-600 text-white w-full py-3 rounded-xl font-bold">Solicitar</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-zinc-900 text-white py-16 px-6">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
+        <div>
+            <h4 class="text-xl font-black italic mb-6">Naranja X</h4>
+            <p class="text-zinc-400 text-sm">Conectamos a las personas con sus sueños a través de herramientas financieras simples.</p>
+        </div>
+        <div>
+            <h5 class="font-bold mb-4">Productos</h5>
+            <ul class="text-zinc-400 space-y-2 text-sm">
+                <li><a href="#" class="hover:text-white">Tarjetas de Crédito</a></li>
+                <li><a href="#" class="hover:text-white">Seguros</a></li>
+                <li><a href="#" class="hover:text-white">Préstamos</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5 class="font-bold mb-4">Ayuda</h5>
+            <ul class="text-zinc-400 space-y-2 text-sm">
+                <li><a href="#" class="hover:text-white">Centro de Ayuda</a></li>
+                <li><a href="#" class="hover:text-white">Botón de Arrepentimiento</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5 class="font-bold mb-4">Seguinos</h5>
+            <div class="flex gap-4">
+                <div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center hover:bg-orange-600 transition cursor-pointer">IG</div>
+                <div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center hover:bg-orange-600 transition cursor-pointer">TW</div>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-zinc-800 text-center text-zinc-500 text-xs">
+        © 2024 Naranja X. Todos los derechos reservados.
+    </div>
+</footer>
+
+</body>
+</html>
